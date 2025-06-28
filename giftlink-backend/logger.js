@@ -1,5 +1,3 @@
-/* jshint esversion: 8 */
-/* jshint esversion: 8 */
 const pino = require('pino');
 
 let logger;
