@@ -13,7 +13,9 @@ async function connectToDatabase() {
         return dbInstance;
     }
 
-    const client = new MongoClient(url);
+    const client = new MongoClient(url, {
+  tlsAllowInvalidCertificates: true,
+});
 
     // Connect to MongoDB
     await client.connect();
