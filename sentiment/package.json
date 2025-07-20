@@ -1,4 +1,13 @@
 {
+  "name": "sentiment-service",
+  "version": "1.0.0",
+  "description": "Sentiment analysis microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha",
+    "dev": "nodemon index.js"
+  },
   "dependencies": {
     "axios": "^1.10.0",
     "dotenv": "^16.5.0",
@@ -7,5 +16,11 @@
     "natural": "^8.1.0",
     "pino": "^9.7.0",
     "pino-pretty": "^13.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.2"
   }
 }
